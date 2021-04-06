@@ -1,0 +1,24 @@
+<?php
+	require_once("session.php");
+	require_once("header.php");
+	require_once("nav.php");
+	
+?>
+<div id="input_form">
+		<h2>무비 리뷰 커뮤니티 로그인</h2>
+		<form method="post" action="login.php">
+			<label for="email">이메일:</label></br>
+			<input type="text" name="email" placeholder="Enter your e-mail"/>
+			</br>
+			</br>
+			<label for="pass">비밀번호:</label></br>
+			<input type="password" name="pass" placeholder="Enter your password"/>
+			</br>
+			</br>
+			<input type="submit" value="로그인" name="submit"/>
+			</br>
+		</form>
+		</div>
+<?php
+	require_once("footer.php");
+?>

@@ -1,0 +1,33 @@
+<?php
+	require_once("session.php");
+	require_once("header.php");
+	require_once("nav.php");
+	
+?>
+	<div id="input_form">
+		<h2>무비 리뷰 커뮤니티 회원 가입</h2>
+		<form method="post" enctype="multipart/form-data" action="signup.php">
+			<label for="email">이메일:</label></br>
+			<input type="text" name="email" placeholder="Enter your e-mail"/>
+			</br>
+			</br>
+			<label for="pass">비밀번호:</label></br>
+			<input type="password" name="pass" placeholder="Enter your password"/>
+			</br>
+			</br>
+			<label for="passcon">비밀번호 확인</label></br>
+			<input type="password" name="passcon" placeholder="Confirm your password"/>
+			</br>
+			</br>
+			
+			<label>프로필 사진</label></br>
+			<input type="file" accept="image/*" name="userimg"/>
+			</br>
+			</br>
+			<input type="submit" value="가입하기" name="submit"/>
+			</br>
+		</form>
+	</div>
+<?php
+	require_once("footer.php");
+?>
